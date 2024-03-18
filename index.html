@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Patri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="img-menu">
+            <img src="imagens/menu-hamburguer.png" alt="">
+        </div>
+        <div class="logar">
+            <p>Olá Lapatri , Bem vindo ao LapatriWEB !</p>
+            <img src="imagens/seta.png" alt="">
+        </div>
+        <div class="menu-mobile">
+            <div class="fechar"><img src="imagens/fechar.png" alt=""></div>
+
+            <div><img class="logo-menu" src="imagens/logo.png" alt=""></div>
+
+            <div class="cadastros">
+                <input type="text" name="text" placeholder="Realizar uma busca...">
+                <div class="h2-menu-mobile">
+                    <h2>Cadastros</h2>
+                    <img class="seta-baixo" src="imagens/seta-baixo.png" alt="">
+                </div>
+                <div class="links ativo"><a href="#">Adicionar monumento</a>
+                    <a class="a-m" href="#">Adicionar municipio</a>
+                </div>
+
+                <h2>Ver Projetos</h2>
+            </div>
+        </div>
+    </nav>
+
+    <main class="conteudo">
+        <h1>Adicione um múnicipio</h1>
+        <div class="ifra"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30192.90635550216!2d-48.2605148!3d-18.92637875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1710761724921!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form name="municipio" id="municipio">
+            <select name="select">
+                <option value="" disabled selected hidden>Selecione o município</option>
+                <option value="valor1">Valor 1</option>
+                <option value="valor2">Valor 2</option>
+                <option value="valor3">Valor 3</option>
+            </select>
+            <div class="butoes">
+                <button class="adicionar">Adicionar</button>
+                <button class="editar">Editar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <div><img src="imagens/logo.png" alt=""></div>
+        <div class="termos">
+            <a href="#">Termos de Uso</a>
+            <a href="#">Política de Privacidade </a>
+            <span>2023 Integra SI All rights reserverd.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

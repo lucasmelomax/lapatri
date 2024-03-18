@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 45px 38px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 1px 10px 0px #0000008c;
+}
+
+.menu .logar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 38px;
+}
+
+.conteudo h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ifra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+#municipio select {
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+  display: block;
+  width: 100%;
+}
+
+.butoes {
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.butoes button {
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 38px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #fc7900cc;
+  align-items: center;
+}
+
+footer img {
+  height: 160px;
+  width: 137px;
+}
+
+footer a {
+  font-size: 18px;
+  color: #fc7900cc;
+  padding: 20px;
+}
+
+footer span {
+  font-size: 20px;
+  display: block;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.menu-mobile.ativo {
+  display: block;
+}
+.menu-mobile {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 222;
+  top: 0;
+  left: 0;
+  width: 335px;
+  box-shadow: 0px 1px 10px 0px #0000008c;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+}
+
+.fechar {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: 20px;
+}
+.menu-mobile .seta-baixo {
+  height: 20px;
+  width: 20px;
+}
+.menu-mobile a {
+  font-size: 12px;
+  display: block;
+  padding: 10px 20px;
+  color: black;
+}
+
+.menu-mobile .seta-baixo.ativo {
+  transform: rotate(180deg);
+}
+.links {
+  display: none;
+}
+.links.ativo {
+  display: block;
+}
+.h2-menu-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.cadastros {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu-mobile .logo-menu {
+  width: 160px;
+  height: 140px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.menu-mobile input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0px #0000008c;
+  border: none;
+  margin-bottom: 70px;
+}
+.menu-mobile h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-mobile a:hover {
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.a-m {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 750px) {
+  footer a {
+    font-size: 12px;
+  }
+  .menu-mobile {
+    width: 250px;
+  }
+  
+
+  footer span {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .conteudo h1 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .butoes {
+    margin-bottom: 50px;
+  }
+  .menu-mobile {
+    width: 200px;
+  }
+  footer img {
+    height: 120px;
+    width: 97px;
+  }
+  .menu img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .menu {
+    font-size: 15px;
+  }
+  footer a {
+    padding: 10px;
+    display: block;
+    text-align: right;
+  }
+  footer span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px) {
+  .menu {
+    font-size: 13px;
+  }
+}
